@@ -1,12 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { Outlet } from 'react-router-dom';
+import Header from './header';
+import { NavFabricDemoAppExample } from './nav-menu';
+import { Separator, Stack, StackItem } from '@fluentui/react';
 
 function App() {
   return (
-    <div className="App">
-      Coming soon
-    </div>
+    <Stack>
+      <Header />
+      <Stack horizontal={true}>
+        <StackItem style={{width: "80%"}}>
+          <Stack horizontal={true}>
+            <NavFabricDemoAppExample />
+            <Outlet/>
+          </Stack>
+        </StackItem>
+        <StackItem>
+          <div></div>
+        </StackItem>
+      </Stack>
+    </Stack>
   );
 }
 
