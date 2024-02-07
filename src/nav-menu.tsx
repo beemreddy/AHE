@@ -3,19 +3,28 @@ import { Nav, INavStyles, INavLinkGroup } from '@fluentui/react/lib/Nav';
 import { getTomatoVarieties } from './data/tomatodata';
 import { getRadishVarieties } from './data/radishdata';
 import { getSpinachVarieties } from './data/spinachdata';
+import { getTips } from './data/tips';
 
 const navStyles: Partial<INavStyles> = { root: { width: 300 } };
 
+const tips = getTips();
 const tomatoVarieties = getTomatoVarieties();
 const radishVarieties = getRadishVarieties();
 const spinachVarieties = getSpinachVarieties();
 
 const navLinkGroups: INavLinkGroup[] = [
   {
+    name: 'Tips',
+    expandAriaLabel: 'Expand tips section',
+    collapseAriaLabel: 'Collapse tips section',
+    links: tips
+  },
+  {
     name: 'Tomatoes',
     expandAriaLabel: 'Expand Tomatoes section',
     collapseAriaLabel: 'Collapse Tomatoes section',
-    links: tomatoVarieties
+    links: tomatoVarieties,
+    collapseByDefault: true
   },
   {
     name: 'Radish',

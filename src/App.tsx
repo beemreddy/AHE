@@ -13,7 +13,9 @@ function App() {
         <StackItem style={{width: "80%"}}>
           <Stack horizontal={true}>
             <NavFabricDemoAppExample />
-            <Outlet/>
+            <Stack style={{paddingLeft: "24px"}}>
+              <Outlet/>
+            </Stack>
           </Stack>
         </StackItem>
         <StackItem>
