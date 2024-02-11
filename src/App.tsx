@@ -7,7 +7,7 @@ import { Separator, Stack, StackItem } from '@fluentui/react';
 
 function App() {
   return (
-    <Stack>
+    <Stack style={{backgroundColor:'lightseagreen'}}>
       <Header />
       <Stack horizontal={true}>
         <StackItem style={{width: "80%"}}>

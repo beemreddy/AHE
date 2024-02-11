@@ -2,6 +2,7 @@ import * as React from 'react';
 import { useParams } from "react-router-dom";
 import { getTipInfo } from "../data/tips";
 import { FontIcon, Icon } from "@fluentui/react/lib/Icon";
+import { List } from '@fluentui/react';
 
 
 export function TipInfo() {
@@ -16,6 +17,12 @@ export function TipInfo() {
             </h2>
 
             <p>{tipInfo?.description}</p>
+
+            {tipInfo?.listitems ?
+                <ol>
+                    {tipInfo.listitems.map(i => <li>{i.name}</li>)}
+                </ol> : undefined
+            }
 
             <iframe 
                 width="560" 
