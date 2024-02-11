@@ -31,7 +31,7 @@ let tips = [
     {
         key: "fast-5",
         id: "UWvdv0FToao",
-        name: "Fast growing plants",
+        name: "5 Fast-growing plants",
         description: "Here are the 5 fast-growing plants that work best in many hydroponic systems:",
         listitems: [
             { key: "0", name: "Bok Choy - The fastest and long-lasting. Best used as salad greens and works in many hydroponic systems." },
@@ -46,6 +46,18 @@ let tips = [
         id: "T9F9SjYG1HM",
         name: "Germination tips",
         description: "The wet paper towel method is the best way to germinate almost all seed varieties. Transplant the sprouts or seedlings to hydroponics once they have germinated."
+    },
+    {
+        key: "cloning-cucumber-plant",
+        id: "cA-cWR4LQ24",
+        name: "Cloning cucumber plant",
+        description: "Cloning is the most effective and fastest way to start a new plant instead of starting from seed. Not only do we save seeds, but we also save a lot of time, approximately 30 days. Plants will establish quickly and start producing cucumbers."
+    },
+    {
+        key: "cloning-tomato-plant",
+        id: "FPXFF26meUw",
+        name: "Cloning tomato plant",
+        description: "Cloning is the most effective and fastest way to start a new plant instead of starting from seed. Not only do we save seeds, but we also save a lot of time, approximately 20 days. Plants will establish quickly and start producing tomatoes."
     }
   ];
 

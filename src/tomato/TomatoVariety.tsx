@@ -8,11 +8,12 @@ export function TomatoVariety() {
 
     return(
         <div style={{width: "60%"}}>
-            <h1 style={{display: "flex", alignItems: "center", justifyContent: "flex-start"}}>
+            <h2 style={{display: "flex", alignItems: "center", justifyContent: "flex-start"}}>
                 <img src={logo} alt="Tomato" style={{width: "50px", padding: "24px"}}></img>
                 {variety?.name}
-                <img src={logo} alt="Tomato" style={{width: "50px", padding: "24px"}}></img>
-            </h1>
+            </h2>
+
+            <p>{variety?.description}</p>
 
             <iframe 
                 width="560" 
