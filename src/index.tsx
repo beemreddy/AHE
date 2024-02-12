@@ -16,6 +16,8 @@ import { initializeIcons } from '@fluentui/react/lib/Icons'
 import { Tip } from './tips/Tip';
 import { TipInfo } from './tips/TipInfo';
 import { Intro } from './Intro';
+import { Review } from './data/reviews/review';
+import { ReviewDetails } from './data/reviews/details';
 
 const root = document.getElementById('root');
 
@@ -31,6 +33,10 @@ ReactDOM.render(
           
           <Route path="tips" element={<Tip/>} >
             <Route path=":id" element={<TipInfo />} />
+          </Route>
+
+          <Route path="reviews" element={<Review/>} >
+            <Route path=":id" element={<ReviewDetails />} />
           </Route>
 
           <Route path="tomato" element={<Tomato/>} >

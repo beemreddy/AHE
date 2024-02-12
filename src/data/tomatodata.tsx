@@ -32,7 +32,8 @@ let varieties = [
     {
         key: "venus-micro-dwarf",
         id: "100kT9dQ6iE",
-        name: "Venus Micro Dwarf"
+        name: "Venus Micro Dwarf",
+        description: ""
     },
     {
         key: "yellow-micro-dwarf",
@@ -42,7 +43,8 @@ let varieties = [
     {
         key: "wherokowhai",
         id: "aUUgGMRYfd8",
-        name: "Wherokowhai"
+        name: "Wherokowhai",
+
     }
   ];
 
